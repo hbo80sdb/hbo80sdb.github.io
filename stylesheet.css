@@ -66,6 +66,8 @@
 	}
 	.search-by-date a:hover { background-color: lightgrey; }
 
+	.about-this-page a:hover { background-color: lightgrey; }
+
 	.words-of-caution-container {
             display: flex;
             flex-wrap: wrap;
