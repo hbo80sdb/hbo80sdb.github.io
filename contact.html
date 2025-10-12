@@ -247,6 +247,22 @@ input[type=submit]:hover {
   color: white;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* This keeps a 16:9 aspect ratio (9 ÷ 16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
      
     </style>
 </head>
@@ -271,6 +287,20 @@ input[type=submit]:hover {
 
 <p>You'll be able to pick any date in the 1980s and see what HBO aired that day. Search up a movie or  program to see exactly when it aired, and how many times that decade. Find out what movie aired the MOST in the 1980s, and if it was <i>The Beastmaster</i>.  (The answer may shock you!)
 Coming  late Summer/early Fall 2025!</p>
+
+
+<div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/cDFHTz-yJRU?si=TxkVR8MZI-PwNWnL"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<br>
 
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
