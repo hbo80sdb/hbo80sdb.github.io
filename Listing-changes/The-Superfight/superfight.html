@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Superfight Marvin Hagler vs. Sugar Ray Leonard</title>
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8ee6ff;
+        }
+        
+        
+        .search-container {
+        background-color: #8ee6ff;
+	display: flex;
+	justify-content: center ;
+	gap: 10px;
+	
+        
+        }
+	.search-by-name {
+	font-family: Arial Black, sans-serif;
+
+	
+	
+	}
+
+.search-by-date {
+	font-family: Arial Black, sans-serif;
+
+	
+	
+	}
+
+	.search-by-name a {
+
+	    color: black;
+	    text-decoration: none;
+	    font-weight: bold;
+	    background-color: white;
+	    border: 2px solid black;
+	    border-radius: 5px;
+	    padding: 10px;
+	    display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+	    transition: background-color 0.3s ease;
+
+	}
+	
+	    .search-by-date a {
+	    color: black;
+	    text-decoration: none;
+	    font-weight: bold;
+	    background-color: white;
+	    border: 2px solid black;
+	    border-radius: 5px;
+	    padding: 10px;
+	    display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+	    transition: background-color 0.3s ease;
+
+	}
+
+	.search-highlight:hover { background-color: #2060ec; color: white; }
+	
+	
+
+        header {
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+	    font-size: 28px;
+        }
+ 
+             .listings-change-container {
+            font-family: Arial, sans-serif;
+	    text-align: center;
+	    margin: 25px;
+	    }
+ 
+.about-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 equal columns */
+    gap: 10px; /* Space between boxes */
+    max-width: 90%; /* Prevents full-screen stretching */
+    margin: 0 auto; /* Centers the entire grid */
+    justify-content: center; /* Helps center if extra space exists */
+}
+	.about-display {
+
+             text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+	    
+        }
+	
+
+.about-display a {
+    display: block; /* Ensures full clickable area */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #919191;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+	    
+	}
+
+.current-display a {
+    display: block; /* Ensures full clickable area */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #919191;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+	    
+	}
+	    
+           .text-info-container {
+            font-family: Arial, sans-serif;
+	    text-align: center;
+	    margin: 25px;
+	    }
+
+           .footnote-container {
+            font-family: Arial, sans-serif;
+	    text-align: left;
+	    margin: 25px;
+	    }
+
+	.showtime-movies {
+	font-weight: bold;
+	}
+	
+
+
+	.footnote-container {
+    font-family: Arial, sans-serif;
+	    text-align: left;
+	    margin: 25px;
+	    }
+/* Responsive adjustments for mobile devices - horizontal*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+	picture img {
+    	width: 600px;
+    	height: auto;
+   
+	}
+}
+        
+.schedule-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1750px;
+            margin: 0 auto;
+            background-color: #8ee6ff;
+	    justify-content: center;
+        }
+        .schedule-section {
+          
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .schedule-section h2 {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        .schedule-section h3 {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            margin: 0;
+        }
+        .schedule-list {
+            list-style-type: none;
+            padding: 0 10px;
+            text-align: left;
+        }
+        .schedule-list li {
+            display: flex;
+            justify-content: left;
+            align-items: baseline;
+            margin-bottom: 5px;
+            font-weight: bold; /* Make both times and items bold */
+        }
+        .schedule-time {
+            min-width: 90px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .schedule-item {
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+            }
+ 	@media (max-width: 768px) {
+            .about-container {
+        grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+        max-width: 80%; /* Prevents sticking to screen edges */
+		
+            }
+}
+	picture img {
+    	width: 300px;
+    	height: auto;
+   
+}
+
+
+
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+}
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+}
+/* Responsive adjustments for mobile devices - horizontal*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+}
+	picture img {
+    	width: 600px;
+    	height: auto;
+}
+
+
+
+
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+            }
+            
+            .years-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        max-width: 80%; /* Prevents sticking to screen edges */
+		
+            }
+}
+
+    </style>
+</head>
+<body>
+<div class="search-container">
+<div class="search-by-name">
+	<span class="search-by-name"><a href="../../index.html" class="search-highlight">SEARCH BY NAME</a></span>
+	</div>
+	
+	<div class="search-by-date">
+	<span class="search-by-date"><a href="../../Calendar_with_schedule_1988.html" class="search-highlight">SEARCH BY DATE</a></span>
+
+	</div>
+	</div> <!--Search Container-->
+	<p> </p>
+
+    <header>
+
+    </header>
+
+
+ <div class="listings-change-container">
+<h1>The Superfight: Marvin Hagler vs. Sugar Ray Leonard</h1>
+
+<h2>An expensive last minute addition to the schedule.</h2>
+
+
+<p>HBO had produced the special Road to the Superfight: Hagler vs. Leonard to air before the fight, but did not have the rights to air the fight live, which was watched via Closed-Circuit Television on April 6, 1987.  HBO then made a <a href="https://talksport.com/boxing/742147/marvin-hagler-vs-sugar-ray-leonard-fight-record-bob-arum-don-king-1987/#:~:text=THE%20NUMBERS%20BEHIND%20'THE%20SUPER,Leonard%20with%20an%20overhand%20left.">deal</a> to re-broadcast the fight 5 times in the week following the bout.</p>
+
+	<p>The following are the programs that were originally scheduled in the guide, but were replaced by the fight broadcast:</p>
+	
+<div class="schedule-container">
+   
+            <ul class="schedule-list">
+                <li><span class="schedule-time">April 11</span><span class="schedule-item">The Hollywood Knights</span></li>
+                <li><span class="schedule-time">April 12</span><span class="schedule-item">Johnny Dangerously</span></li>
+                <li><span class="schedule-time">April 14</span><span class="schedule-item">Angel (1983)</span></li>
+                <li><span class="schedule-time">April 16</span><span class="schedule-item">Ninja III: The Domination</span></li>
+                <li><span class="schedule-time">April 18</span><span class="schedule-item">Head Office</span></li>
+            </ul>
+  
+        </div>
+
+</div> <!-- listings change container -->
+
+
+
+
+
+</body>
+</html>

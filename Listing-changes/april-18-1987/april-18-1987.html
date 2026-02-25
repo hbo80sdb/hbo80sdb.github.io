@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling changes from the Superfight</title>
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8ee6ff;
+        }
+        
+        
+        .search-container {
+        background-color: #8ee6ff;
+	display: flex;
+	justify-content: center ;
+	gap: 10px;
+	
+        
+        }
+	.search-by-name {
+	font-family: Arial Black, sans-serif;
+
+	
+	
+	}
+
+.search-by-date {
+	font-family: Arial Black, sans-serif;
+
+	
+	
+	}
+
+	.search-by-name a {
+
+	    color: black;
+	    text-decoration: none;
+	    font-weight: bold;
+	    background-color: white;
+	    border: 2px solid black;
+	    border-radius: 5px;
+	    padding: 10px;
+	    display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+	    transition: background-color 0.3s ease;
+
+	}
+	
+	    .search-by-date a {
+	    color: black;
+	    text-decoration: none;
+	    font-weight: bold;
+	    background-color: white;
+	    border: 2px solid black;
+	    border-radius: 5px;
+	    padding: 10px;
+	    display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+	    transition: background-color 0.3s ease;
+
+	}
+
+	.search-highlight:hover { background-color: #2060ec; color: white; }
+	
+	
+
+        header {
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+	    font-size: 28px;
+        }
+ 
+             .listings-change-container {
+            font-family: Arial, sans-serif;
+	    text-align: center;
+	    margin: 25px;
+	    }
+ 
+.about-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 equal columns */
+    gap: 10px; /* Space between boxes */
+    max-width: 90%; /* Prevents full-screen stretching */
+    margin: 0 auto; /* Centers the entire grid */
+    justify-content: center; /* Helps center if extra space exists */
+}
+	.about-display {
+
+             text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+	    
+        }
+	
+
+.about-display a {
+    display: block; /* Ensures full clickable area */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #919191;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+	    
+	}
+
+.current-display a {
+    display: block; /* Ensures full clickable area */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #919191;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+	    
+	}
+	    
+           .text-info-container {
+            font-family: Arial, sans-serif;
+	    text-align: center;
+	    margin: 25px;
+	    }
+
+           .footnote-container {
+            font-family: Arial, sans-serif;
+	    text-align: left;
+	    margin: 25px;
+	    }
+
+	.showtime-movies {
+	font-weight: bold;
+	}
+	
+
+
+	.footnote-container {
+    font-family: Arial, sans-serif;
+	    text-align: left;
+	    margin: 25px;
+	    }
+/* Responsive adjustments for mobile devices - horizontal*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+	picture img {
+    	width: 600px;
+    	height: auto;
+   
+	}
+}
+        
+.schedule-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1750px;
+            margin: 0 auto;
+            background-color: #8ee6ff;
+	    justify-content: center;
+        }
+        .schedule-section {
+          
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .schedule-section h2 {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        .schedule-section h3 {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            margin: 0;
+        }
+        .schedule-list {
+            list-style-type: none;
+            padding: 0 10px;
+            text-align: left;
+        }
+        .schedule-list li {
+            display: flex;
+            justify-content: left;
+            align-items: baseline;
+            margin-bottom: 5px;
+            font-weight: bold; /* Make both times and items bold */
+        }
+        .schedule-time {
+            min-width: 90px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .schedule-item {
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+            }
+ 	@media (max-width: 768px) {
+            .about-container {
+        grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+        max-width: 80%; /* Prevents sticking to screen edges */
+		
+            }
+}
+	picture img {
+    	width: 300px;
+    	height: auto;
+   
+}
+
+
+
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+}
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+}
+/* Responsive adjustments for mobile devices - horizontal*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+}
+	picture img {
+    	width: 600px;
+    	height: auto;
+}
+
+
+
+
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+            }
+            
+            .years-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        max-width: 80%; /* Prevents sticking to screen edges */
+		
+            }
+}
+
+    </style>
+</head>
+<body>
+<div class="search-container">
+<div class="search-by-name">
+	<span class="search-by-name"><a href="../../index.html" class="search-highlight">SEARCH BY NAME</a></span>
+	</div>
+	
+	<div class="search-by-date">
+	<span class="search-by-date"><a href="../../Calendar_with_schedule_1988.html" class="search-highlight">SEARCH BY DATE</a></span>
+
+	</div>
+	</div> <!--Search Container-->
+	<p> </p>
+
+    <header>
+
+    </header>
+
+
+ <div class="listings-change-container">
+<h1>The last minute re-broadcast of the Superfight between Marvin Hagler vs. Sugar Ray Leonard messed with the schedule</h1>
+
+
+
+
+<p>The 3:30 pm re-broadcast of the Superfight between Hagler and Leonard was a last minute change that replaced a scheduled airing of the film <i>Head Office.</i>  The schedule for the rest of the night was also changed, according the April 18th, 1987 listing in <i>The New York Times.</i></p>
+
+<p>Here's the original schedule as it appeared in the HBO Guide before the change:</p>
+
+
+<div class="schedule-container">
+ <div id="Apr18" class="schedule-section">            
+	<h2>April 18</h2>            <h3>Saturday</h3>            
+	<ul class="schedule-list">                               
+	<li><span class="schedule-time">10:00 PM</span><span class="schedule-item">On Location:® Sam Kinison</span></li>                
+	<li><span class="schedule-time">11:00 PM</span><span class="schedule-item">The Hitchhiker "Made for Each Other"</span></li>                
+	<li><span class="schedule-time">11:30 PM</span><span class="schedule-item">Head Office (1985) (PG-13) (CC)</span></li>                
+	<li><span class="schedule-time">1:05 AM</span><span class="schedule-item">Ghostbusters (1984) (PG) (CC)</span></li>                
+	<li><span class="schedule-time">2:55 AM</span><span class="schedule-item">Alamo Bay (R)</span></li>                
+	<li><span class="schedule-time">4:40 AM</span><span class="schedule-item">After Hours (1985) (R) (CC)</span></li>                
+            
+</ul>        
+</div>      
+
+	<p>In addition to changing the order of the late-night programming, the debut of Sam Kinison's special was inexplicably replaced Steven Wright's On Location.
+
+</div> <!-- listings change container -->
+
+
+
+
+
+</body>
+</html>
