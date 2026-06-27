@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling change for The Showdown</title>
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8ee6ff;
+        }
+        
+        
+        .search-container {
+        background-color: #8ee6ff;
+	display: flex;
+	justify-content: center ;
+	gap: 10px;
+	
+        
+        }
+	.search-by-name {
+	font-family: Arial Black, sans-serif;
+
+	
+	
+	}
+
+.search-by-date {
+	font-family: Arial Black, sans-serif;
+
+	
+	
+	}
+
+	.search-by-name a {
+
+	    color: black;
+	    text-decoration: none;
+	    font-weight: bold;
+	    background-color: white;
+	    border: 2px solid black;
+	    border-radius: 5px;
+	    padding: 10px;
+	    display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+	    transition: background-color 0.3s ease;
+
+	}
+	
+	    .search-by-date a {
+	    color: black;
+	    text-decoration: none;
+	    font-weight: bold;
+	    background-color: white;
+	    border: 2px solid black;
+	    border-radius: 5px;
+	    padding: 10px;
+	    display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+	    transition: background-color 0.3s ease;
+
+	}
+
+	.search-highlight:hover { background-color: #2060ec; color: white; }
+	
+	
+
+        header {
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+	    font-size: 28px;
+        }
+ 
+             .listings-change-container {
+            font-family: Arial, sans-serif;
+	    text-align: center;
+	    margin: 25px;
+	    }
+ 
+.about-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 equal columns */
+    gap: 10px; /* Space between boxes */
+    max-width: 90%; /* Prevents full-screen stretching */
+    margin: 0 auto; /* Centers the entire grid */
+    justify-content: center; /* Helps center if extra space exists */
+}
+	.about-display {
+
+             text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+	    
+        }
+	
+
+.about-display a {
+    display: block; /* Ensures full clickable area */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #919191;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+	    
+	}
+
+.current-display a {
+    display: block; /* Ensures full clickable area */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #919191;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+	    
+	}
+	    
+           .text-info-container {
+            font-family: Arial, sans-serif;
+	    text-align: center;
+	    margin: 25px;
+	    }
+
+           .footnote-container {
+            font-family: Arial, sans-serif;
+	    text-align: left;
+	    margin: 25px;
+	    }
+
+	.showtime-movies {
+	font-weight: bold;
+	}
+	
+
+
+	.footnote-container {
+    font-family: Arial, sans-serif;
+	    text-align: left;
+	    margin: 25px;
+	    }
+/* Responsive adjustments for mobile devices - horizontal*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+	picture img {
+    	width: 600px;
+    	height: auto;
+   
+	}
+}
+        
+.schedule-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1750px;
+            margin: 0 auto;
+            background-color: #8ee6ff;
+	    justify-content: center;
+        }
+        .schedule-section {
+          
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .schedule-section h2 {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        .schedule-section h3 {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            margin: 0;
+        }
+        .schedule-list {
+            list-style-type: none;
+            padding: 0 10px;
+            text-align: left;
+        }
+        .schedule-list li {
+            display: flex;
+            justify-content: left;
+            align-items: baseline;
+            margin-bottom: 5px;
+            font-weight: bold; /* Make both times and items bold */
+        }
+        .schedule-time {
+            min-width: 90px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .schedule-item {
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+            }
+ 	@media (max-width: 768px) {
+            .about-container {
+        grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+        max-width: 80%; /* Prevents sticking to screen edges */
+		
+            }
+}
+	picture img {
+    	width: 300px;
+    	height: auto;
+   
+}
+
+
+
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+}
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+                
+            }
+}
+/* Responsive adjustments for mobile devices - horizontal*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+}
+	picture img {
+    	width: 600px;
+    	height: auto;
+}
+
+
+
+
+        @media (max-width: 768px) {
+            .schedule-section {
+                width: 100%;
+            }
+            
+            .years-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        max-width: 80%; /* Prevents sticking to screen edges */
+		
+            }
+}
+
+    </style>
+</head>
+<body>
+<div class="search-container">
+<div class="search-by-name">
+	<span class="search-by-name"><a href="../../index.html" class="search-highlight">SEARCH BY NAME</a></span>
+	</div>
+	
+	<div class="search-by-date">
+	<span class="search-by-date"><a href="../../Calendar_with_schedule_1981.html" class="search-highlight">SEARCH BY DATE</a></span>
+
+	</div>
+	</div> <!--Search Container-->
+	<p> </p>
+
+    <header>
+
+    </header>
+
+
+ <div class="listings-change-container">
+<h1>A delayed broadcast of <i>The Showdown</i></h1>
+
+
+<p>The fight billed as <i>The Showdown</i> between Sugar Ray Leonard and Thomas Hearns happened on September 16, 1981, but aired live on closed-circuit TV, not HBO. This is the only instance of it airing on HBO that I could confirm, via the cable listings in <i>The New York Times</i>.  It replaced a scheduled airing of <i>Avalanche Express.</i></p>
+
+
+</div>
+</div> <!-- listings change container -->
+
+
+
+
+
+</body>
+</html>
