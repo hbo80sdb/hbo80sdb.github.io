@@ -87,6 +87,10 @@
     margin: 0 auto; /* Centers the entire grid */
     justify-content: center; /* Helps center if extra space exists */
 }
+/* Center the 7th panel */
+.about-container > :nth-child(7) {
+    grid-column: 2;
+}
 	.about-display {
 
              text-align: center;
@@ -217,6 +221,11 @@
         max-width: 80%; /* Prevents sticking to screen edges */
 		
             }
+    .about-container > :nth-child(7) {
+        grid-column: 1 / -1;   /* Span both columns */
+        justify-self: center;  /* Center the panel */
+        width: 50%;            /* Or whatever width looks good */
+    }
 
             }
 
@@ -269,6 +278,9 @@
 	</div>
 	<div class="about-display">
             <span class="about-display"><a href="beastmaster.html" class="search-highlight">Hey, Beastmaster's On!</a></span>
+	</div>
+	<div class="about-display">
+            <span class="about-display"><a href="short-takes.html" class="search-highlight">HBO Short Takes</a></span>
 	</div>
 	<div class="about-display">
             <span class="about-display"><a href="thanks.html" class="search-highlight">Thanks!</a></span>
